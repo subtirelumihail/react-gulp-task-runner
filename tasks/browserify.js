@@ -14,23 +14,23 @@ var chalk = require('chalk');
 module.exports = function(gulp, argv) {
   gulp.task('browserify', function() {
     return browserify({
-            entries: [config.appEntry]
-        })
-        .transform(reactify)
-        .transform(envify({
-            target: argv.target || 'local'
-        }))
-        .bundle()
-        .on('error', function(err){
-          // print the error (can replace with gulp-util)
-          console.log(chalk.red(err.message));
-          // end this stream
-          this.emit('end');
-        })
-        .pipe(source(config.bundles.js))
-        .pipe(buffer())
-        .pipe(gulpIf(argv.production, stripDebug()))
-        .pipe(gulpIf(argv.production, uglify()))
-        .pipe(gulp.dest(config.dest.js));
+        entries: [config.appEntry]
+      })
+      .transform(reactify)
+      .transform(envify({
+          target: argv.target || 'local'
+      }))
+      .bundle()
+      .on('error', function(err){
+        // print the error (can replace with gulp-util)
+        console.log(chalk.red(err.message));
+        // end this stream
+        this.emit('end');
+      })
+      .pipe(source(config.bundles.js))
+      .pipe(buffer())
+      .pipe(gulpIf(argv.production, stripDebug()))
+      .pipe(gulpIf(argv.production, uglify()))
+      .pipe(gulp.dest(config.dest.js));
   });
 };
