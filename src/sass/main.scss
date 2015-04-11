@@ -2,12 +2,8 @@
 /* Import Helpers */
 @import "helpers/reset";
 
+// Compass Mixins
+@import "../../node_modules/compass-mixins/lib/compass";
+
 /* Import layout */
 @import "layout";
-
-/* Import elements */
-@import "elements/all";
-
-/* Import modules*/
-@import "modules/all";
-

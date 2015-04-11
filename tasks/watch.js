@@ -18,14 +18,14 @@ module.exports = function(gulp) {
       'sass',
       browserSync.reload
     ]);
-    gulp.watch(config.source.font, [
-      'fonts',
-      browserSync.reload
-    ]);
-    gulp.watch(config.source.js, [
-      'jshint',
-      browserSync.reload
-    ]);
+    // gulp.watch(config.source.font, [
+    //   'fonts',
+    //   browserSync.reload
+    // ]);
+    // gulp.watch(config.source.js, [
+    //   'jshint',
+    //   browserSync.reload
+    // ]);
     gulp.watch(config.source.browserify, [
       'browserify',
       browserSync.reload

@@ -15,11 +15,10 @@ var server = {
 module.exports = function(gulp, argv) {
 
   gulp.task('default', [
-    'clean',
     'browserify',
     'sass',
-    'jshint',
     'img',
+    //'jshint',
     // 'fonts',
     'html'
   ], function() {

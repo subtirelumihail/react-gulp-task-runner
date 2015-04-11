@@ -2,17 +2,15 @@
 
 var autoprefixer = require('gulp-autoprefixer');
 var config = require('./config');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
 module.exports = function(gulp) {
-
   gulp.task('sass', function() {
     return gulp.src(config.source.sass)
       .pipe(sass({
         sourcemapPath: './',
         bundleExec: true,
-        require: [ 'susy' ],
         style: 'compressed'
       }))
       .on('error', function(err) {
