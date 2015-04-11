@@ -1,4 +1,4 @@
-Complex Gulp Runner
+React Gulp task runner
 ===
 
 To get this up and running:
