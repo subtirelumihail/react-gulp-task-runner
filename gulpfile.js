@@ -1,9 +1,9 @@
 'use strict';
 
-var argv = require('yargs').argv;
+var gulp       = require('gulp');
+var argv       = require('yargs').argv;
 var requireDir = require('require-dir');
-var dir = requireDir('./tasks');
-var gulp = require('gulp');
+var dir        = requireDir('./gulp/tasks');
 
 require('pretty-error').start();
 

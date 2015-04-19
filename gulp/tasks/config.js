@@ -18,7 +18,13 @@ module.exports = {
 
   source: {
     html: [ srcFolder + '/*.html' ],
-    img: [ srcFolder + '/img/**/*', srcFolder + '/img/*' ],
+    img: [
+      srcFolder + '/img/**/*',
+      srcFolder + '/img/*'
+    ],
+    svg: [
+      srcFolder + '/img/svg/*.svg',
+    ],
     sass: [
       srcFolder + '/sass/**/*.scss',
       srcFolder + '/sass/*.scss'

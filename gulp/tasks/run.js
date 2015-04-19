@@ -19,7 +19,7 @@ module.exports = function(gulp, argv) {
     'sass',
     'img',
     //'jshint',
-    // 'fonts',
+    'fonts',
     'html'
   ], function() {
     if (argv.target !== 'production'){
