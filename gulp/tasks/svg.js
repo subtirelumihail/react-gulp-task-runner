@@ -8,12 +8,15 @@ var config  = require('./config');
 module.exports = function(gulp) {
   gulp.task('svg', function () {
     return gulp.src(config.source.svg)
-      .pipe(changed(config.dest.svg)) // Ignore unchanged files
+      .pipe(changed(config.dest.img)) // Ignore unchanged files
       .pipe(svgSprite({
-        mode: 'symbols',
-        prefix: 'sym-%f'
+        mode: {
+          inline: true,
+          symbol: true,
+          prefix: 'svg-%s',
+        }
       }))
-    .pipe(gulp.dest(config.dest.svg));
+    .pipe(gulp.dest(config.dest.img));
   });
 
 };
