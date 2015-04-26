@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Hello</title>
-    <link rel="stylesheet" href="css/main.css"/>
+    <style>@@include('../build/css/main.css')</style>
   </head>
   <body>
-    @@include('../build/img/symbol/svg/sprite.symbol.svg')
+    <div class="svg-container">@@include('../build/img/symbol/svg/sprite.symbol.svg')</div>
     <div id="app"></div>
     <script src="js/bundle.js"></script>
   </body>
