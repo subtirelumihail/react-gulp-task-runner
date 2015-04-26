@@ -57,6 +57,7 @@ module.exports = {
 
     html: buildFolder + '/',
     img: buildFolder + '/img/',
+    svg: buildFolder + '/img/svg/',
     sass: buildFolder + '/sass/',
     css: buildFolder + '/css/',
     font: buildFolder + '/fonts/',

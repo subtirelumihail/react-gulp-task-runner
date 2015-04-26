@@ -6,7 +6,7 @@ var config      = require('./config');
 
 module.exports = function(gulp) {
 
-  gulp.task('html', function() {
+  gulp.task('html', ['sass', 'svg'], function() {
     return gulp.src(config.source.html)
       .pipe(fileInclude())
       .pipe(gulp.dest(config.dest.html));
