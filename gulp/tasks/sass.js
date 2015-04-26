@@ -10,13 +10,11 @@ var handleError = require('../util/handleErrors');
 module.exports = function(gulp) {
   gulp.task('sass', function() {
     return gulp.src(config.source.sass)
+      .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(sass({
-        sourcemapPath: './',
-        bundleExec: true,
-        style: 'compressed'
+        outputStyle: 'compressed'
       }))
       .on('error',handleError)
-      .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(autoprefixer('last 2 versions', '> 2%'))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.dest.css));
