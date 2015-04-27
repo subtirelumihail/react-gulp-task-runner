@@ -13,7 +13,7 @@ var config      = require('./config');
 var handleError = require('../util/handleErrors');
 
 module.exports = function(gulp, argv) {
-  gulp.task('browserify', function() {
+  gulp.task('browserify', ['jshint'], function() {
     return browserify({
         entries: [config.appEntry]
       })

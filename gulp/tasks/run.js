@@ -16,7 +16,6 @@ module.exports = function(gulp, argv) {
 
   gulp.task('default', [
     'browserify',
-    'sass',
     'img',
     //'jshint',
     'fonts',
