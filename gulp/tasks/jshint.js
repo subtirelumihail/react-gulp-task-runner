@@ -6,7 +6,6 @@ var jshint = require('gulp-jshint');
 var handleError = require('../util/handleErrors');
 
 module.exports = function(gulp) {
-
   gulp.task('jshint', function() {
     var stream = gulp.src(config.source.jshint)
       .on('error', handleError)
@@ -19,5 +18,4 @@ module.exports = function(gulp) {
    
     return stream;
   });
-
 };

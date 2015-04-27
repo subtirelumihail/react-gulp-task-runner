@@ -13,11 +13,9 @@ var server = {
 };
 
 module.exports = function(gulp, argv) {
-
   gulp.task('default', [
     'browserify',
     'img',
-    //'jshint',
     'fonts',
     'html'
   ], function() {
@@ -26,5 +24,4 @@ module.exports = function(gulp, argv) {
       gulp.start('watch');
     }
   });
-
 };
