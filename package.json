@@ -1,5 +1,6 @@
 {
-  "name": "react-tak-runner",
+  "name": "react-task-runner",
+  "repository": "https://github.com/subtirelumihail/react-gulp-task-runner",
   "version": "0.0.2",
   "private": false,
   "dependencies": {

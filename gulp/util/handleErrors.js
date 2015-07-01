@@ -12,7 +12,6 @@ module.exports = function() {
   }).apply(this, args);
   
   console.log('-----');
-  console.log(chalk.blue('Error Details: '));
   console.log(chalk.yellow(args));
   console.log('-----');
   

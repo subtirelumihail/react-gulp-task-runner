@@ -1,6 +1,5 @@
 .DS_Store
 .sass-cache
 build
-gulp-ruby-sass
 node_modules
 npm-debug.log

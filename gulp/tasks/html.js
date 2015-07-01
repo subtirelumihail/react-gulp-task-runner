@@ -1,6 +1,5 @@
 'use strict';
 
-
 var fileInclude = require('gulp-file-include');
 var config      = require('./config');
 
